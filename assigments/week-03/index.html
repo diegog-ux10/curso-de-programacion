@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="descripcion"content="pagina web de un formulario de registro basico" >
+ 
+    <title>Formulario de registro</title>
+</head>
+<body>
+
+<header>
+    <h1>Formulario de registro</h1>
+</header>
+
+   <section>
+    <form action="/formulario" method="post">
+      <fieldset>
+        <legend>Informacion personal</legend>
+      <label for="Nombre completo">Nombre completo:</label> 
+      <input type="texto" id="Nombre completo" name="Nombre completo"/><br>
+
+      <label for="Correo electronico">Correo electronico:</label> 
+      <input type="email" id="Correo electronico" name="Correo electronico" required/><br>
+
+      <label for="Contraseña">Contraseña:</label> 
+      <input type="password" id="Contraseña" name="Contraseña" maxlength="10" minlength="5" required><br>
+
+      <label for="Numero de telefono">Numero de telefono:</label> 
+      <input type="tel" id="Numero de telefono" name="Numero de telefono"required/><br>
+
+      <label for="Fecha de nacimiento">Fecha de nacimiento:</label> 
+      <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento"/>
+    </fieldset>
+
+      <fieldset>
+        <legend>Campo de seleccion:</legend>
+        <input id="Femenino" type="radio" name="genero" value="Femenino">
+        <label for="Femenino">Femenino</label><br>
+       
+        <input id="Masculino" type="radio" name="genero" value="Masculino">
+        <label for="Masculino">Masculino</label><br>
+
+        <input id="Otro" type="radio" name="genero" value="Otro">
+        <label for="Otro">Otro</label><br><br>
+      
+           <legend>Habilidades:</legend>
+            <input id="Creatividad" type="checkbox" name="Creatividad" value="Creatividad">
+            <label for="Creatividad">Creatividad</label><br>
+       
+            <input id="Comunicación efectiva:" type="checkbox" name="Comunicación efectiva:" value="Comunicación efectiva:">
+            <label for="Comunicación efectiva:">Comunicación efectiva:</label><br>
+
+            <input id="Adaptabilidad" type="checkbox" name="Adaptabilidad" value="Adaptabilidad">
+            <label for="Adaptabilidad">Adaptabilidad</label><br>
+
+            <input id="Liderazgo" type="checkbox" name="Liderazgo" value="Liderazgo">
+            <label for="Liderazgo">Liderazgo</label><br><br>
+          
+              <legend>Pais:</legend>
+                <select>
+                  <option>Venezuela</option>
+                  <option>Argentina</option>
+                  <option>Colombia</option>
+                  <option>Brasil</option>
+                  <option>Mexico</option>
+                  <option>Chile</option>
+
+                </fieldset>
+
+                </select> <br><br>
+                <hr>
+                <p>Comentarios:</p>
+                 <textarea id="Comentario" name="Comentario" placeholder=" ingrese comentario" cols="50"></textarea><br>
+  
+      <input type="submit"/>
+      <input type="reset">
+    </form>
+   </section> 
+</body>
+</html>
